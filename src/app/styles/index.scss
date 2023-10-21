@@ -1,0 +1,22 @@
+@import url("reset.scss");
+@import url("variables/global.scss");
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--text-color);
+  font: var(--font-m);
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  place-items: center;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+}

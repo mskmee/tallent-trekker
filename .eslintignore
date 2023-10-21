@@ -1,2 +1,7 @@
 build
 node_modules
+project.config.ts
+commitlint.config.ts
+vite-env.d.ts
+vite.config.ts
+dangerfile.ts

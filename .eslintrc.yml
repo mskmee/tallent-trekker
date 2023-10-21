@@ -6,7 +6,6 @@ settings:
     version: 'detect'
   typescript: true
   node: false
-
 parserOptions:
   project:
     - ./tsconfig.json
