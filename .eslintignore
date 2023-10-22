@@ -1,7 +1,7 @@
 build
 node_modules
 project.config.ts
-commitlint.config.ts
+commitlint.config.cts
 vite-env.d.ts
 vite.config.ts
 dangerfile.ts

@@ -6,7 +6,8 @@ import {
   type GitHubRepo,
 } from 'danger';
 
-import { ProjectPrefix } from './project.config';
+const APP = 'tt';
+const ENVIRONMENTS = ['development', 'production'];
 
 type GitHubPRDSL = LibraryGitHubDSL & {
   head: GitHubMergeRef & {
@@ -28,11 +29,9 @@ const DangerConfig = {
   TITLE: {
     IS_REQUIRED: true,
     PATTERN: new RegExp(
-      `^((${
-        ProjectPrefix.APP
-      })-[0-9]{1,6}): (.*\\S)$|(${ProjectPrefix.ENVIRONMENTS.join(
+      `^((${APP})-[0-9]{1,6}): (.*\\S)$|(${ENVIRONMENTS.join(
         '|',
-      )}) to (${ProjectPrefix.ENVIRONMENTS.join('|')})$`,
+      )}) to (${ENVIRONMENTS.join('|')})$`,
     ),
   },
   ASSIGNEES: {
@@ -47,9 +46,9 @@ const DangerConfig = {
   BRANCH: {
     IS_REQUIRED: true,
     PATTERN: new RegExp(
-      `^((${Object.values(BranchPrefix).join('|')})/(${
-        ProjectPrefix.APP
-      })-[0-9]{1,6})-[a-zA-Z0-9-]+$|(${ProjectPrefix.ENVIRONMENTS.join('|')})$`,
+      `^((${Object.values(BranchPrefix).join(
+        '|',
+      )})/(${APP})-[0-9]{1,6})-[a-zA-Z0-9-]+$|(${ENVIRONMENTS.join('|')})$`,
     ),
   },
 };

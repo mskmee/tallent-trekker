@@ -1,0 +1,41 @@
+.button {
+  padding: 14px 60px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color ease 0.3s;
+}
+
+.filled {
+  color: var(--filled-button-text-color);
+  background-color: var(--filled-button-bg-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--filled-button-bg-hover-color);
+  }
+
+  &:active {
+    background-color: var(--filled-button-bg-pressed-color);
+    box-shadow: 5px 5px 8px 0 rgb(0 0 0 / 25%) inset;
+  }
+
+  &:disabled {
+    background-color: var(--filled-button-bg-disabled-color);
+    pointer-events: none;
+  }
+}
+
+.outline {
+  color: var(--outline-button-ui-color);
+  border-color: var(--outline-button-ui-color);
+}
+
+.ghost {
+  color: var(--ghost-button-text-color);
+  background-color: transparent;
+  border: none;
+}
+
+/* --- TODO: add styles to button variants ---- */
