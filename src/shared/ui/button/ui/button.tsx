@@ -10,6 +10,8 @@ type ButtonProperties = {
   variant?: ButtonType;
 } & ButtonHTMLAttributes<HTMLButtonElement>;
 
+// TODO: add icon properties and loading state
+
 const Button: FC<ButtonProperties> = ({
   children,
   className,
