@@ -1,6 +1,3 @@
-const ProjectPrefix = {
-  APP: 'tt',
-  ENVIRONMENTS: ['development', 'production'],
-} as const;
+const ProjectPrefix = {} as const;
 
 export { ProjectPrefix };

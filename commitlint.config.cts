@@ -1,10 +1,11 @@
 import { UserConfig } from '@commitlint/types';
 
-import { ProjectPrefix } from './project.config.js';
+const APP = 'tt';
+const ENVIRONMENTS = ['development', 'production'];
 
 const COMMIT_MODIFIERS = ['+', '*', '-'];
 const COMMIT_MESSAGE_REGEXP = new RegExp(
-  `^(((${ProjectPrefix.APP})-[0-9]{1,6})|(${ProjectPrefix.ENVIRONMENTS.join(
+  `^(((${APP})-[0-9]{1,6})|(${ENVIRONMENTS.join(
     '|',
   )})): ([${COMMIT_MODIFIERS.join(',')}]) (.*\\S)$`,
 );
@@ -13,12 +14,12 @@ Commit message must have one of the following formats:
     - <project-prefix>-<issue-number>: <modifier> <description>
     - <environment>: <modifier> <description>
 Where:
-    - <project-prefix>: ${ProjectPrefix.APP}
+    - <project-prefix>: ${APP}
     - <modifier>: ${COMMIT_MODIFIERS.join(', ')}
-    - <environment>: ${ProjectPrefix.ENVIRONMENTS.join(', ')}
+    - <environment>: ${ENVIRONMENTS.join(', ')}
 Examples:
-    - ${ProjectPrefix.APP}-5: + ui/ux lecture
-    - ${ProjectPrefix.ENVIRONMENTS[0]}: - comments in ui/ux homework`;
+    - ${APP}-5: + ui/ux lecture
+    - ${ENVIRONMENTS[0]}: - comments in ui/ux homework`;
 
 const configuration: UserConfig = {
   parserPreset: {
