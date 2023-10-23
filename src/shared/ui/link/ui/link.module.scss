@@ -1,0 +1,9 @@
+.link {
+  padding: 5px;
+  color: var(--link-text-color);
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--link-hover-color);
+  }
+}
