@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@400;700&display=swap";
 @import "reset";
 @import "variables/global";
 
@@ -6,8 +7,8 @@ body {
   height: 100%;
   min-height: 100vh;
   margin: 0;
-  color: var(--text-main-color);
-  font: var(--font-m);
+  color: $text-main-color;
+  font: $font-m;
   font-weight: 400;
   font-style: normal;
   place-items: center;
