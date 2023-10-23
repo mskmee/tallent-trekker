@@ -1,3 +1,15 @@
 .logo {
   display: flex;
+  gap: 5px;
+  padding: 5px;
+  text-decoration: none;
+
+  &_icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  &_title {
+    font: var(--font-secondary-l);
+  }
 }

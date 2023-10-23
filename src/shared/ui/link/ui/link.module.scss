@@ -1,9 +1,10 @@
 .link {
-  padding: 5px;
   color: var(--link-text-color);
+  text-decoration: none;
   transition: color 0.3s ease;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--link-hover-color);
   }
 }

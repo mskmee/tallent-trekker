@@ -13,7 +13,8 @@ type LogoProperties = {
 const Logo: FC<LogoProperties> = ({ className }) => {
   return (
     <Link to={AppRoutes.HOME} className={classNames(styles.logo, className)}>
-      <LogoComponent />
+      <LogoComponent className={styles.logo_icon} />
+      <h1 className={styles.logo_title}>Talent Trekker</h1>
     </Link>
   );
 };

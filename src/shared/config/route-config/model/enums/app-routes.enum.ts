@@ -1,8 +1,8 @@
 const AppRoutes = {
   HOME: '/',
-  CONTACTS: 'contacts',
   STATISTICS: 'statistics',
   ARTICLES: 'articles',
+  CONTACTS: 'contacts',
 } as const;
 
 export { AppRoutes };
