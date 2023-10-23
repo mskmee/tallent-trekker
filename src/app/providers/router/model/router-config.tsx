@@ -1,4 +1,9 @@
-import { ContactsPage, HomePage } from '~/pages/pages.js';
+import {
+  ArticlesPage,
+  ContactsPage,
+  HomePage,
+  StatisticPage,
+} from '~/pages/pages.js';
 import {
   AppRoutes,
   RoutePath,
@@ -14,6 +19,14 @@ const routerConfig: RouterConfig = {
   [AppRoutes.CONTACTS]: {
     path: RoutePath.contacts,
     element: <ContactsPage />,
+  },
+  [AppRoutes.ARTICLES]: {
+    path: RoutePath.articles,
+    element: <ArticlesPage />,
+  },
+  [AppRoutes.STATISTICS]: {
+    path: RoutePath.statistics,
+    element: <StatisticPage />,
   },
 };
 
