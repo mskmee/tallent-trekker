@@ -8,7 +8,7 @@ import { type RouterConfig } from './types/router-config.type.js';
 
 const routerConfig: RouterConfig = {
   [AppRoutes.HOME]: {
-    path: RoutePath.home,
+    path: RoutePath['/'],
     element: <HomePage />,
   },
   [AppRoutes.CONTACTS]: {

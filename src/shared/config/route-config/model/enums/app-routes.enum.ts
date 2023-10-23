@@ -1,5 +1,5 @@
 const AppRoutes = {
-  HOME: 'home',
+  HOME: '/',
   CONTACTS: 'contacts',
 } as const;
 
