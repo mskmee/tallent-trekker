@@ -27,7 +27,7 @@ const config = ({ mode }: ConfigEnv): ReturnType<typeof defineConfig> => {
       preprocessorOptions: {
         scss: {
           additionalData: `
-          @import "@/app/styles/mixins/media.scss";
+          @import "@/app/styles/mixins/mixins.scss";
           @import "@/app/styles/variables/global.scss";
         `,
         },

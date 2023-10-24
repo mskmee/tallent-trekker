@@ -4,12 +4,14 @@
 
 body {
   box-sizing: border-box;
+  min-width: 320px;
   height: 100%;
   min-height: 100vh;
   margin: 0;
   color: $text-main-color;
-  font: $font-m;
   font-weight: 400;
+  font-size: $font-size-m;
+  font-family: $font-family-main;
   font-style: normal;
   place-items: center;
 }
