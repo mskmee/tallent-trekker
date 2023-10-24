@@ -33,6 +33,25 @@
   }
 }
 
+.mobile_auth {
+  @include hidden;
+
+  @include media(mobile, tablet) {
+    @include showed;
+  }
+}
+
+.mobile_button {
+  width: 80%;
+  font-size: 20px;
+  white-space: nowrap;
+  text-align: center;
+
+  &:first-child {
+    margin-bottom: 20px;
+  }
+}
+
 .toggle {
   @include hidden;
 }
@@ -72,7 +91,7 @@
   top: 8px;
 }
 
-.user_wrapper {
+.auth_wrapper {
   display: flex;
   gap: 15px;
 

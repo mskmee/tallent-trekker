@@ -16,3 +16,9 @@ $breakpoints: (
   visibility: hidden;
   opacity: 0;
 }
+
+@mixin showed {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
