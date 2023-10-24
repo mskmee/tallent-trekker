@@ -1,0 +1,24 @@
+$breakpoints: (
+  mobile: 500px,
+  tablet: 999px,
+);
+
+@mixin media($keys...) {
+  @each $key in $keys {
+    @media (max-width: map-get($breakpoints, $key)) {
+      @content;
+    }
+  }
+}
+
+@mixin hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+@mixin showed {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}

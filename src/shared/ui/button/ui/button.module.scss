@@ -8,32 +8,32 @@
 }
 
 .filled {
-  color: var(--filled-button-text-color);
-  background-color: var(--filled-button-bg-color);
+  color: $filled-button-text-color;
+  background-color: $filled-button-bg-color;
 
   &:hover,
   &:focus {
-    background-color: var(--filled-button-bg-hover-color);
+    background-color: $filled-button-bg-hover-color;
   }
 
   &:active {
-    background-color: var(--filled-button-bg-pressed-color);
+    background-color: $filled-button-bg-pressed-color;
     box-shadow: 5px 5px 8px 0 rgb(0 0 0 / 25%) inset;
   }
 
   &:disabled {
-    background-color: var(--filled-button-bg-disabled-color);
+    background-color: $filled-button-bg-disabled-color;
     pointer-events: none;
   }
 }
 
 .outline {
-  color: var(--outline-button-ui-color);
-  border-color: var(--outline-button-ui-color);
+  color: $outline-button-ui-color;
+  border-color: $outline-button-ui-color;
 }
 
 .ghost {
-  color: var(--ghost-button-text-color);
+  color: $ghost-button-text-color;
   background-color: transparent;
   border: none;
 }

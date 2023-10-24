@@ -1,0 +1,24 @@
+.logo {
+  display: flex;
+  gap: 5px;
+  padding: 5px;
+  text-decoration: none;
+
+  @include media(mobile, tablet) {
+    flex: 1;
+  }
+
+  &_icon {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.logo_title {
+  font-size: 25px;
+  font-family: $font-family-secondary;
+
+  @include media(mobile) {
+    display: none;
+  }
+}

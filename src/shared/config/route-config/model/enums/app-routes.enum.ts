@@ -1,5 +1,7 @@
 const AppRoutes = {
-  HOME: 'home',
+  HOME: '/',
+  STATISTICS: 'statistics',
+  ARTICLES: 'articles',
   CONTACTS: 'contacts',
 } as const;
 

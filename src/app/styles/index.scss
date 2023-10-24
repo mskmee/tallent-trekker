@@ -1,14 +1,17 @@
+@import "https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@400;700&display=swap";
 @import "reset";
 @import "variables/global";
 
 body {
   box-sizing: border-box;
+  min-width: 320px;
   height: 100%;
   min-height: 100vh;
   margin: 0;
-  color: var(--text-main-color);
-  font: var(--font-m);
+  color: $text-main-color;
   font-weight: 400;
+  font-size: $font-size-m;
+  font-family: $font-family-main;
   font-style: normal;
   place-items: center;
 }
