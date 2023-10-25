@@ -1,5 +1,5 @@
 import { AppRoutes } from '~/shared/config/route-config/route-config.js';
-import { useId } from '~/shared/lib/hooks/hooks.js';
+import { useId, useTranslation } from '~/shared/lib/hooks/hooks.js';
 import { type FC } from '~/shared/types/types.js';
 import { Button, ButtonVariant, Link } from '~/shared/ui/ui.js';
 
@@ -7,6 +7,7 @@ import styles from './menu.module.scss';
 
 const Menu: FC = () => {
   const burgerId = useId();
+  const { t } = useTranslation();
   return (
     <>
       <input className={styles.toggle} id={burgerId} type="checkbox" />
@@ -21,7 +22,7 @@ const Menu: FC = () => {
             }
             return (
               <Link key={route} to={route}>
-                <li className={styles.menu_item}>{title.toLowerCase()}</li>
+                <li className={styles.menu_item}>{t(title)}</li>
               </Link>
             );
           })}
