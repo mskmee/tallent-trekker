@@ -31,20 +31,22 @@ const Menu: FC = () => {
               className={styles.mobile_button}
               variant={ButtonVariant.OUTLINE}
             >
-              Sign In
+              {t('LOGIN')}
             </Button>
-            <Button className={styles.mobile_button}>Sign Up</Button>
+            <Button className={styles.mobile_button}>
+              {t('REGISTRATION')}
+            </Button>
           </li>
         </ul>
       </nav>
       <div className={styles.auth_wrapper}>
-        <Button variant={ButtonVariant.OUTLINE}>Sign In</Button>
-        <Button>Sign Up</Button>
+        <Button variant={ButtonVariant.OUTLINE}>{t('LOGIN')}</Button>
+        <Button>{t('REGISTRATION')}</Button>
       </div>
     </>
   );
 };
 
-//TODO: create auth component
+//TODO: create auth component and add language change block
 
 export { Menu };

@@ -1,5 +1,7 @@
 {
   "STATISTICS": "Statistics",
   "ARTICLES": "Articles",
-  "CONTACTS": "Contacts"
+  "CONTACTS": "Contacts",
+  "LOGIN": "Sign In",
+  "REGISTRATION": "Sign Up"
 }
